@@ -1,5 +1,6 @@
-import { Box, Flex, Icon, Image, ListItem, SimpleGrid, Text, UnorderedList, useBreakpointValue } from "@chakra-ui/react";
+import { Box, Flex, GridItem, Icon, Image, ListItem, SimpleGrid, Text, UnorderedList, useBreakpointValue } from "@chakra-ui/react";
 import { BenefitCard } from "./benefitCard";
+import { BenefitItem } from "./BenefitItem";
 
 interface CardData {
   title: string;
@@ -37,19 +38,29 @@ export function GridBenefits() {
 
   return (
     <Box maxWidth={1360} mx="auto" mt={["9", "28"]}>
-      <SimpleGrid flex="1" gap={["80px", "130px"]} minChildWidth={[136, 158]}>
+      <SimpleGrid justifyItems="center" flex="1" gap={["40px", "80px", "130px"]} minChildWidth={[136, 158]}>
         {
           isWideVersion === true ? cards.map(card => (
             <BenefitCard key={card.title} title={card.title} image_url={card.image_url}/>
           ))
-          : cards.map(card => (
-            <Flex align="center" justify="center" key={card.title}>
-              <Image src="/ellipse.svg" alt="elipse" />
-              <Text fontSize="lg" fontWeight="500" lineHeight="short" color="gray.600" ml="3">
-                {card.title}
-              </Text>
-            </Flex>
-          ))
+          : 
+          <>
+            <GridItem>
+              <BenefitItem title={cards[0].title}/>
+            </GridItem>
+            <GridItem>
+              <BenefitItem title={cards[1].title}/>
+            </GridItem>
+            <GridItem>
+              <BenefitItem title={cards[2].title}/>
+            </GridItem>
+            <GridItem>
+              <BenefitItem title={cards[3].title}/>
+            </GridItem>
+            <GridItem colSpan={[2, 2, 2, 1]}>
+              <BenefitItem title={cards[4].title}/>
+            </GridItem>
+          </>
         }
       </SimpleGrid>
     </Box>

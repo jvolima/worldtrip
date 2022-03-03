@@ -22,7 +22,7 @@ export function Header() {
       }
 
       <Flex justify="center" flex="1">
-        <Image src="/logo.svg" alt="Logo" />
+        <Image src="/logo.svg" alt="Logo" w={["81px", "184px"]} h={["20px", "46px"]}/>
       </Flex>
     </Flex>
   )
