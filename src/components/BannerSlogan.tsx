@@ -7,8 +7,8 @@ export function BannerSlogan() {
   })
 
   return (
-    <Box bg="blue.900">
-      <Flex maxWidth={1120} w="100%" mx="auto" align="center" justify="space-between">
+    <Box bgImage={"url(/background.svg)"} bgSize="cover">
+      <Flex maxWidth={1360} w="100%" mx="auto" align="center" justify="space-between">
         <Box my={["7", "20"]}px="4">
           <Text
             color="gray.50" 
