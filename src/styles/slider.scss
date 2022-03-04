@@ -1,0 +1,46 @@
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  color: #FFBA08;
+  width: 60px;
+  height: 60px;
+}
+
+.swiper-button-next {
+  margin-right: 1.25rem;
+}
+
+.swiper-button-prev {
+  margin-left: 1.25rem;
+}
+
+.swiper-pagination-bullet {
+  background: #999999 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+.swiper-pagination-bullet-active {
+  background: #FFBA08 !important;
+  width: 16px !important;
+  height: 16px !important;
+}
+
+@media (max-width: 500px) {
+  .swiper-button-next::after,
+  .swiper-button-prev::after {
+    font-size: 32px;
+    color: #FFBA08;
+    width: 32px !important;
+    height: 32px !important;
+  }
+
+  .swiper-pagination-bullet {
+    width: 8px !important;
+    height: 8px !important;
+  }
+  
+  .swiper-pagination-bullet-active {
+    width: 8px !important;
+    height: 8px !important;
+  }
+}

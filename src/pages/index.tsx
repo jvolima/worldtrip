@@ -1,6 +1,7 @@
 import { Text, Flex } from "@chakra-ui/react";
 import Head from "next/head";
 import { BannerSlogan } from "../components/BannerSlogan";
+import { CarouselContinent } from "../components/CarouselContinents";
 import { GridBenefits } from "../components/GridBenefits";
 import { Header } from "../components/Header";
 
@@ -42,6 +43,18 @@ export default function Home() {
           Vamos nessa? <br /> 
           Então escolha seu continente
         </Text>
+      </Flex>
+
+      <Flex  
+        align="center" 
+        justifyContent="center"
+        mt={["5", "14"]}
+        mb="10"
+        mx="auto"
+        maxWidth={1380}
+        w="100%"
+      >
+        <CarouselContinent />
       </Flex>
     </>
   )
