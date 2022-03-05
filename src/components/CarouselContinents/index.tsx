@@ -7,46 +7,18 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 
-interface ContinentProps {
+interface Continent {
+  id: string;
   name: string;
   description: string;
   image_url: string;
 }
 
-export function CarouselContinent() {
-  const continents: ContinentProps[] = [
-    {
-      name: 'Europa',
-      description: 'o continente mais antigo',
-      image_url: '/continentEurope.png'
-    },
-    {
-      name: 'Ásia',
-      description: 'o continente mais antigo',
-      image_url: '/continentEurope.png'
-    },
-    {
-      name: 'América do Sul',
-      description: 'o continente mais antigo',
-      image_url: '/continentEurope.png'
-    },
-    {
-      name: 'América do Norte',
-      description: 'o continente mais antigo',
-      image_url: '/continentEurope.png'
-    },
-    {
-      name: 'África',
-      description: 'o continente mais antigo',
-      image_url: '/continentEurope.png'
-    },
-    {
-      name: 'Oceania',
-      description: 'o continente mais antigo',
-      image_url: '/continentEurope.png'
-    }
-  ]
+interface CarouselContinentProps {
+  continents: Continent[];
+}
 
+export function CarouselContinent({ continents }: CarouselContinentProps) {
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -59,7 +31,7 @@ export function CarouselContinent() {
     >
       {
         continents.map(continent => (
-          <SwiperSlide key={Math.random()}>
+          <SwiperSlide key={continent.id}>
             <Flex
               bgImage={continent.image_url} 
               bgRepeat="no-repeat"
@@ -68,7 +40,7 @@ export function CarouselContinent() {
               justify="center" 
               align="center" 
               flexDirection="column"
-              h={["375px", "450px"]}
+              h={["250px", "450px"]}
             >
               <Heading 
                 fontSize={["2xl", "5xl"]}
@@ -84,6 +56,7 @@ export function CarouselContinent() {
                 color="gray.300" 
                 lineHeight={["shorter", "9"]} 
                 fontWeight="bold"
+                maxWidth={[200, 300, 500]}
               >
                 {continent.description}
               </Text>

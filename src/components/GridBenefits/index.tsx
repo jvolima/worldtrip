@@ -1,5 +1,5 @@
-import { Box, Flex, GridItem, Icon, Image, ListItem, SimpleGrid, Text, UnorderedList, useBreakpointValue } from "@chakra-ui/react";
-import { BenefitCard } from "./benefitCard";
+import { Box, GridItem, SimpleGrid, useBreakpointValue } from "@chakra-ui/react";
+import { BenefitCard } from "./BenefitCard";
 import { BenefitItem } from "./BenefitItem";
 
 interface CardData {
@@ -37,8 +37,8 @@ export function GridBenefits() {
   });
 
   return (
-    <Box maxWidth={1360} mx="auto" mt={["9", "28"]}>
-      <SimpleGrid justifyItems="center" flex="1" gap={["40px", "80px", "130px"]} minChildWidth={[136, 158]}>
+    <Box maxWidth={1120} mx="auto" mt={["9", "28"]}>
+      <SimpleGrid justifyItems="center" flex="1" gap={["40px", "60px", "80px"]} minChildWidth={[136, 158]}>
         {
           isWideVersion === true ? cards.map(card => (
             <BenefitCard key={card.title} title={card.title} image_url={card.image_url}/>
