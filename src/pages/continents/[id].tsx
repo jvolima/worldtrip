@@ -104,7 +104,8 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
     props: {
       continent,
       cities
-    }
+    },
+    revalidate: 60 * 60 * 24 // 1 dia
   }
 }
 
