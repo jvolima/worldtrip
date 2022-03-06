@@ -14,6 +14,8 @@ export function CityCard({ name, country, flag, image_url }: CityCardProps) {
       boxSizing="border-box" 
       borderRadius="4px" 
       maxHeight={280}
+      maxWidth={256}
+      w="100%"
       bgColor="#ffffff"
     >
       <Box>
