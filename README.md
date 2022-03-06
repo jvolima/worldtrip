@@ -4,7 +4,7 @@
 
 ## Sobre a aplicação 🚀
 - Site para viagens
-- Mostra os principais pontos turísticos de cada continente~
+- Mostra os principais pontos turísticos de cada continente
 - Aplicação totalmente responsiva
 
 ## Tecnologias utilizadas ⚙

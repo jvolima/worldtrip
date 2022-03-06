@@ -14,13 +14,19 @@ interface CitiesProps {
 
 export function Cities({ cities }: CitiesProps) {
   return (
-    <Box maxWidth={1240} w="100%" mx="auto" mt="20">
-      <Heading>
+    <Box maxWidth={1240} w="100%" mx="auto" mt={["8", "20"]}>
+      <Heading 
+        fontSize={["2xl", "4xl"]} 
+        px="4" 
+        lineHeight={["2.25rem", "3.375rem"]} 
+        color="gray.600" 
+        fontWeight="500"
+      >
         Cidades + 100
       </Heading>
 
       <SimpleGrid my="10" minChildWidth={256} gap="2.875rem">
-        {
+        { 
           cities.map(city => (
             <CityCard 
               name={city.name} 

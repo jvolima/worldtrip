@@ -16,6 +16,24 @@
           "country": "Reino Unido",
           "image_url": "https://images.unsplash.com/photo-1520986606214-8b456906c813?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
           "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/255px-Flag_of_the_United_Kingdom_%283-5%29.svg.png"
+        },
+        {
+          "name": "Paris",
+          "country": "França",
+          "image_url": "https://images.unsplash.com/photo-1502602898657-3e91760cbb34?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1173&q=80",
+          "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bc/Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg/255px-Flag_of_France_%281794%E2%80%931815%2C_1830%E2%80%931974%2C_2020%E2%80%93present%29.svg.png"
+        },
+        {
+          "name": "Roma",
+          "country": "Itália",
+          "image_url": "https://images.unsplash.com/photo-1604579803699-127581deabdf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+          "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Flag_of_Italy.svg/255px-Flag_of_Italy.svg.png"
+        },
+        {
+          "name": "Amsterdã",
+          "country": "Holanda",
+          "image_url": "https://images.unsplash.com/photo-1559653794-7e71fa65c9c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+          "flag": "https://www.holandaevoce.nl/binaries/large/content/gallery/nl-netherlandsandyou/content-afbeeldingen/vlag-nederland.png"
         }
       ]
     },
@@ -23,7 +41,38 @@
       "id": "asia", 
       "name": "Ásia",
       "description": "O maior dos continentes",
-      "image_url": "/asia.png"
+      "image_url": "/asia.png",
+      "bannerContent": "https://images.unsplash.com/photo-1617469165786-8007eda3caa7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "content": "A Ásia é o maior dos continentes, tanto em área como em população. Abrange um terço das partes sólidas da superfície da Terra e é responsável por abrigar quase três quintos da população mundial.",
+      "countries": "51",
+      "languages": "51",
+      "citiesWithMoreThan100k": "43",
+      "mostFamousCities": [
+        {
+          "name": "Xangai",
+          "country": "China",
+          "image_url": "https://images.unsplash.com/photo-1501621185719-221c3312e3ba?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+          "flag": "https://www.significados.com.br/foto/china.jpg"
+        },
+        {
+          "name": "Mumbai",
+          "country": "Índia",
+          "image_url": "https://images.unsplash.com/photo-1595658658481-d53d3f999875?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1074&q=80",
+          "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/41/Flag_of_India.svg/280px-Flag_of_India.svg.png"
+        },
+        {
+          "name": "Istambul",
+          "country": "Turquia",
+          "image_url": "https://images.unsplash.com/photo-1624915585644-99e936e90cbb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1071&q=80",
+          "flag": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Flag_of_Turkey.svg/1200px-Flag_of_Turkey.svg.png"
+        },
+        {
+          "name": "Tóquio",
+          "country": "Japão",
+          "image_url": "https://images.unsplash.com/photo-1570521462033-3015e76e7432?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1171&q=80",
+          "flag": "https://www.br.emb-japan.go.jp/cultura/bandeira.jpg"
+        }
+      ]
     },
     { 
       "id": "america-do-norte", 

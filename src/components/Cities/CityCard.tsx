@@ -10,6 +10,7 @@ interface CityCardProps {
 export function CityCard({ name, country, flag, image_url }: CityCardProps) {
   return (
     <Box 
+      mx="auto"
       border="1px solid rgba(255, 186, 8, 0.5)" 
       boxSizing="border-box" 
       borderRadius="4px" 
