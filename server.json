@@ -1,0 +1,53 @@
+{
+  "continents": [
+    { 
+      "id": "europa", 
+      "name": "Europa", 
+      "description": "O continente mais antigo", 
+      "image_url": "/europa.png",
+      "bannerContent": "https://images.unsplash.com/photo-1584986098745-02507619826c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+      "content": "A Europa é, por convenção, um dos seis continentes do mundo. Compreendendo a península ocidental da Eurásia, a Europa geralmente divide-se da Ásia a leste pela divisória de águas dos montes Urais, o rio Ural, o mar Cáspio, o Cáucaso, e o mar Negro a sudeste",
+      "countries": "50",
+      "languages": "60",
+      "citiesWithMoreThan100k": "27",
+      "mostFamousCities": [
+        {
+          "name": "Londres",
+          "country": "Reino Unido",
+          "image_url": "https://images.unsplash.com/photo-1520986606214-8b456906c813?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80",
+          "flag": "https://images.unsplash.com/photo-1502700559166-5792585222ef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=391&q=80"
+        }
+      ]
+    },
+    { 
+      "id": "asia", 
+      "name": "Ásia",
+      "description": "O maior dos continentes",
+      "image_url": "/asia.png"
+    },
+    { 
+      "id": "america-do-norte", 
+      "name": "Ámerica do Norte", 
+      "description": "Continente dos grandes lagos",
+      "image_url": "/america-do-norte.png"
+    },
+    { 
+      "id": "america-do-sul", 
+      "name": "Ámerica do Sul", 
+      "description": "Maior floresta tropical do mundo",
+      "image_url": "/america-do-sul.png"
+    },
+    { 
+      "id": "oceania", 
+      "name": "Oceania", 
+      "description": "O menor e mais isolado continente do planeta Terra",
+      "image_url": "/oceania.png" 
+    },
+    { 
+      "id": "africa", 
+      "name": "África", 
+      "description": "Grande biodiversidade",
+      "image_url": "/africa.png" 
+    }
+  ]
+}
