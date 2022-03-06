@@ -1,5 +1,4 @@
 import { Text, Flex } from "@chakra-ui/react";
-import { createServer } from "miragejs"
 import Head from "next/head";
 import { useEffect, useState } from "react";
 import { api } from "../api/axios";

@@ -19,14 +19,14 @@ export function Cities({ cities }: CitiesProps) {
         Cidades + 100
       </Heading>
 
-      <SimpleGrid minChildWidth={256} gap="2.875rem">
+      <SimpleGrid my="10" minChildWidth={256} gap="2.875rem">
         {
           cities.map(city => (
             <CityCard 
               name={city.name} 
               flag={city.flag}
               country={city.country} 
-              image_url={city.country}
+              image_url={city.image_url}
               key={city.name} 
             />
           ))  

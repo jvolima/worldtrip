@@ -6,6 +6,7 @@ import 'swiper/css'
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
+import { useRouter } from "next/router";
 
 interface Continent {
   id: string;
@@ -19,6 +20,12 @@ interface CarouselContinentProps {
 }
 
 export function CarouselContinent({ continents }: CarouselContinentProps) {
+  const router = useRouter();
+
+  function handleOpenPage(id: string) {
+    router.push(`/continents/${id}`)
+  }
+
   return (
     <Swiper
       modules={[Navigation, Pagination, Scrollbar, A11y]}
@@ -41,6 +48,8 @@ export function CarouselContinent({ continents }: CarouselContinentProps) {
               align="center" 
               flexDirection="column"
               h={["250px", "450px"]}
+              cursor="pointer"
+              onClick={() => handleOpenPage(continent.id)}
             >
               <Heading 
                 fontSize={["2xl", "5xl"]}

@@ -12,7 +12,7 @@ interface Continent {
   bannerContent: string;
   countries: string;
   citiesWithMoreThan100k: string;
-  languages: string;
+  languages: string; 
 }
 
 interface City {
@@ -98,7 +98,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 
   const continent = response.data
 
-  const cities = continent.mostFamousCities;
+  const cities = continent.mostFamousCities
 
   return {
     props: {
